@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="icon" href="./assets/app_logo.png">
+     <title>Food Facts: The hidden Ingredient</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+      rel="stylesheet">
+ </head>
+ <body>
+     <header class="site-header">
+            <div class="brand-name">
+                <div class="logo">
+                    <img src="./assets/app_logo.png" alt="Food Facts">
+                </div>
+                <div class="logo-text">
+                  <h1>Food Facts</h1>
+                  <p>THE HIDDEN INGREDIENTS</p>
+                </div>
+            </div>
+         <nav class="nav">
+            <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+             <div class="nav-links">
+                </button>
+                 <a href="/home">Home</a>
+                 <a href="/about">Feature</a>
+                 <a href="/features">Features</a>
+                 <a href="/contact">Contact</a>
+             </div>
+         </nav>
+     </header>
+     <main class="main-sections">
+         <section class="hero-section">
+            <div class="hero-content">
+                <h1>What's Hiding <br> in Your Food?</h1>
+                <p>Decode what brands don't tell you. <br>
+                   Explore hidden ingredients, additives, and more.
+                </p>
+                <form action="#ApiSearch" class="search-bar">
+                    <input type="text" name="item" id="product" placeholder="Enter food product or barcode">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/hero-section.png" alt="Food Search">
+            </div>
+         </section>
+         <section class="featured-section">
+            <div class="stat-box">
+                <p><span>88%</span> of people can't interpret food labels</p>
+            </div>
+            <div class="content-box">
+                <h2>Confusing Food Labels?</h2>
+                <p>Hidden sugars can be listed under 50+ different names.</p>
+                <p>Even <b>healthy</b> products may contain harmful additives.</p>
+            </div>
+         </section>
+         <section class="labels-section">
+            <div class="label-item">
+                <div class="label-icon">
+                    <img src="./assets/label_icon1.png" alt="Ingredient">
+                    <p>Ingredient Analysis</p>
+                </div>
+            </div>
+            <div class="label-item">
+                <div class="label-icon">
+                    <img src="./assets/label_icon2.png" alt="Risks">
+                    <p>Potential Risks</p>
+                </div>
+            </div>
+            <div class="label-item">
+                <div class="label-icon">
+                    <img src="./assets/label_icon3.png" alt="Ratings">
+                    <p>Clear Ratings</p>
+                </div>
+            </div>
+        </section>
+        <section class="try-section">
+            <h2>Try it Out</h2>
+            <div class="try-cards-section">
+                <div class="try-card">
+                    <img src="./assets/lays.png" alt="Lays">
+                    <h3>Lays Chips</h3>
+                    <p class="ingredients"><b>Ingredients:</b> Potatoes, Palm Oil...</p>
+                    <div class="additives">
+                        <p><b>Additives:</b> E631 (Flavor Enhancer)</p>
+                    </div>
+                </div>
+                <div class="try-card">
+                    <img src="./assets/kurkure.png" alt="Kurkure">
+                    <h3>Kurkure</h3>
+                    <p class="ingredients"><b>Ingredients:</b> Corn Meal, Edible Oil...</p>
+                    <div class="additives">
+                        <p><b>Additives:</b> E631, E627</p>
+                    </div>
+                </div>
+                <div class="try-card">
+                    <img src="./assets/dairymilk.png" alt="Cadbury Dairy Milk">
+                    <h3>Cadbury Dairy Milk</h3>
+                    <p class="ingredients"><b>Ingredients:</b> Sugar, Milk Solids...</p>
+                    <div class="additives">
+                        <p><b>Additives:</b> Flavoring</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer class="site-footer">
+        <div class="social-icons">
+            <ul>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </ul>
+        </div>
+        <div class="footer-credit">Powered by <b>Open Food Facts</b></div>
+        <div class="footer">
+                <div class="line"></div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+ </body>
+</html>
